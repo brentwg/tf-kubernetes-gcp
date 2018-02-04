@@ -9,6 +9,8 @@ chmod +x cfssl_linux-amd64 cfssljson_linux-amd64
 sudo mv cfssl_linux-amd64 /usr/local/bin/cfssl
 sudo mv cfssljson_linux-amd64 /usr/local/bin/cfssljson
 
+# verification
+cfssl version
 
 # Install kubectl
 wget https://storage.googleapis.com/kubernetes-release/release/v1.9.0/bin/linux/amd64/kubectl
@@ -16,4 +18,5 @@ wget https://storage.googleapis.com/kubernetes-release/release/v1.9.0/bin/linux/
 chmod +x kubectl
 sudo mv kubectl /usr/local/bin/
 
-
+# verification
+kubectl version --client
